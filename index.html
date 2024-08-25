@@ -43,7 +43,7 @@
 <body class="manrope text-black">
 
     <!-- Header -->
-    <header class="bg-gradient-to-b from-[#f6f6f6] to-[#ffffff] pb-8 lg:mb-20">
+    <header class="bg-gradient-to-b from-[#f6f6f6] to-[#ffffff] px-20 pt-10 pb-8 lg:mb-20">
         <nav class="lg:w-11/12 md:mx-auto lg:mx-auto mb-6">
             <div class="navbar">
                 <div class="navbar-start">
@@ -91,7 +91,7 @@
                 </div>
               </div>
         </nav>
-
+        <!-- Hero Section -->
         <div class="hero lg:w-11/12 lg:mx-auto">
             <div class="hero-content flex-col">
               <img
@@ -112,96 +112,218 @@
     </header>
 
     <main>
-        <section class="bg-[#F4F4F4] lg:pt-20 relative"> 
-            <div class=" hidden lg:block absolute top-4 left-6 z-10">
-              <img class="hidden lg:block " src="./assets/Vector.png" alt="">
-            </div>
-            <div class="w-11/12 mx-auto">
-              <div class="hero">
-                <div class="hero-content py-7 lg:p-0 flex-col-reverse lg:flex-row-reverse lg:items-start xl:items-start">
-                  <img src="./assets/Rectangle.png" class="lg:w-[60%] rounded-xl"/>
-                  <div class="flex lg:items-start lg:justify-start flex-col items-center justify-center ">
-                    <button class="bg-white text-base px-4 py-2 rounded-3xl mb-3 font-extrabold"><i class="fa-solid fa-arrow-right mr-1 "></i>About Us</button>
-                    <h1 class="lg:text-5xl md:text-4xl text-2xl tracking-tight text-center lg:text-left lg:  font-extrabold lg:mb-2 ">We design thoughtful, liveable spaces</h1>
-                    <p class="py-4 lg:mb-3 text-center font-semibold text-[#494949] lg:text-left text-sm">
-                      Simple and elegant style teamed with sophistication and perfection.
-                    </p>
-                    <!-- card Section -->
-                    <div class=" md:flex md:flex-row md:gap-5 lg:block">
-                      <!-- card 1 -->
-                       <div class="p-4 lg:p-6 mb-4 md:mb-0 lg:mb-4 flex gap-4 bg-white rounded-2xl">
-                        <img class="w-10 h-10 lg:w-14 lg:h-14" src="./assets/commercial.png" alt="">
-                        <div>
-                          <h4 class="font-extrabold text-[#494949] text-base mb-3 lg:mb-5" >Commercial</h4>
-                        <p class="text-[#737373] font-semibold text-sm lg:w-10/12 tracking-wide"> Designed to meet the unique needs of businesses.</p>
-                        </div>
-                       </div>
-    
-                      <!-- Card 2 -->
-                       <div class="p-4 lg:p-6 flex gap-4 bg-white rounded-2xl">
-                        <img class="w-10 h-10 lg:w-12 lg:h-12" src="./assets/residential.png" alt="">
-                        <div>
-                          <h2 class="font-extrabold text-[#494949] text-base mb-3 lg:mb-5" >Residential</h2>
-                        <p class="text-[#737373] font-semibold text-sm lg:w-10/12 tracking-wide">Residences contains cooking and bathroom facilities</p>
-                        </div>
-                       </div>
-                    </div>
-                  </div>
-                  
-                </div>
-              </div>
-            </div>
-           </section>
-
-           <!-- Our works section -->
-        <section class="bg-[#F4F4F4] lg:pt-20 pb-8  lg:pb-20">
-            <div class="w-11/12 mx-auto">
-              <div class="flex flex-col items-center justify-center ">
-                <button class="bg-white text-base px-4 py-2 rounded-3xl mb-3 font-extrabold"><i class="fa-solid fa-arrow-right mr-1 "></i>How we works</button>
-                <h1 class="lg:text-5xl text-3xl tracking-tight text-center lg:leading-tight  font-black lg:mb-2 ">Our Works Process</h1>
-                <p class="py-4 lg:mb-3 lg:w-3/4 font-semibold text-[#494949] text-center text-sm">
-                  There are architects making the drawings, contractors executing blueprints and engineers making sure that the numerous systems involved have structural integrity.
+      <!-- About Us Section -->
+       <section class="bg-gray-200 lg:pt-20 relative"> 
+        <div class=" hidden lg:block absolute top-4 left-6 z-10">
+          <img class="hidden lg:block px-20" src="./assets/Vector.png" alt="">
+        </div>
+        <div class="w-11/12 mx-auto px-20">
+          <div class="hero">
+            <div class="hero-content py-7 lg:p-0 flex-col-reverse lg:flex-row-reverse lg:items-start xl:items-start">
+              <img src="./assets/Rectangle.png" class="lg:w-[60%] rounded-xl"/>
+              <div class="flex lg:items-start lg:justify-start flex-col items-center justify-center ">
+                <button class="bg-white text-base px-4 py-2 rounded-3xl mb-3 font-extrabold"><i class="fa-solid fa-arrow-right mr-1 "></i>About Us</button>
+                <h1 class="lg:text-5xl md:text-4xl text-2xl tracking-tight text-center lg:text-left lg:  font-extrabold lg:mb-2 ">We design thoughtful, liveable spaces</h1>
+                <p class="py-4 lg:mb-3 text-center font-semibold text-[#494949] lg:text-left text-sm">
+                  It sounds like you’re in the business of creating spaces that people can truly connect with and enjoy.
                 </p>
                 <!-- card Section -->
-                 <div class="w-full grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 space-y-4 lg:space-y-0 md:space-y-0 lg:gap-6 md:gap-5">
-  
-                  <!-- Card 1 -->
-                   <div class="space-y-2 rounded-2xl  bg-[#E7C1D3] p-5">
-                    <img src="./assets/concept.png" alt="">
-                    <h2 class="text-lg font-extrabold text-[#1C1C1C]">Concept</h2>
-                    <p class="text-[#494949] text-sm font-semibold">First to understand the plot of land which the project will take place.</p>
+                <div class=" md:flex md:flex-row md:gap-5 lg:block">
+                  <!-- card 1 -->
+                   <div class="p-4 lg:p-6 mb-4 md:mb-0 lg:mb-4 flex gap-4 bg-white rounded-2xl">
+                    <img class="w-10 h-10 lg:w-14 lg:h-14" src="./assets/commercial.png" alt="">
+                    <div>
+                      <h4 class="font-extrabold text-[#494949] text-base mb-3 lg:mb-5" >Commercial</h4>
+                    <p class="text-[#737373] font-semibold text-sm lg:w-10/12 tracking-wide">We design commercial spaces that seamlessly identity and comfort</p>
+                    </div>
                    </div>
-  
-                   <!-- card 2 -->
-                   <div class="space-y-2 rounded-2xl  bg-[#EFDA6E] p-5">
-                    <img src="./assets/flow-chart.png" alt="">
-                    <h2 class="text-lg font-extrabold text-[#1C1C1C]">Design Process</h2>
-                    <p class="text-[#494949] text-sm font-semibold">We start with pre-design, often referred to as the programming phase.</p>
+
+                  <!-- Card 2 -->
+                   <div class="p-4 lg:p-6 flex gap-4 bg-white rounded-2xl">
+                    <img class="w-10 h-10 lg:w-12 lg:h-12" src="./assets/residential.png" alt="">
+                    <div>
+                      <h2 class="font-extrabold text-[#494949] text-base mb-3 lg:mb-5" >Residential</h2>
+                    <p class="text-[#737373] font-semibold text-sm lg:w-10/12 tracking-wide">We create residential spaces that blend style, personalized functionality</p>
+                    </div>
                    </div>
-  
-                   <!-- card 3 -->
-                   <div class="space-y-2 rounded-2xl  bg-[#A4DAC3] p-5">
-                    <img src="./assets/vision.png" alt="">
-                    <h2 class="text-lg font-extrabold text-[#1C1C1C]">Supervision</h2>
-                    <p class="text-[#494949] text-sm font-semibold">We'll want to show your ideas to others and get their feedback.</p>
-                   </div>
-  
-                   <!-- card 4 -->
-                   <div class="space-y-2 rounded-2xl  bg-[#77AAEA] p-5">
-                    <img src="./assets/budget-planning.png" alt="">
-                    <h2 class="text-lg font-extrabold text-[#1C1C1C]">Budget Planning</h2>
-                    <p class="text-[#494949] text-sm font-semibold">We like to discuss budgets with you. It's important to know your budget.</p>
-                    
-                   </div>
-                 </div>
+                </div>
               </div>
+              
             </div>
-          </section>
-  
-    
-    </main>
+          </div>
+        </div>
+       </section>
+
+       <!-- Work Process -->
+        <section class="bg-gray-200 lg:pt-20 px-20 pb-8  lg:pb-20">
+          <div class="w-11/12 mx-auto">
+            <div class="flex flex-col items-center justify-center ">
+              <button class="bg-white text-base px-4 py-2 rounded-3xl mb-3 font-extrabold"><i class="fa-solid fa-arrow-right mr-1 "></i>How we works</button>
+              <h1 class="lg:text-5xl text-3xl tracking-tight text-center lg:leading-tight  font-black lg:mb-2 ">Our Works Process</h1>
+              <p class="py-4 lg:mb-3 lg:w-3/4 font-semibold text-[#494949] text-center text-sm">
+                Our work process involves understanding your vision, developing tailored designs, and managing every detail to ensure a seamless execution.
+              </p>
+              <!-- card Section -->
+               <div class="w-full grid grid-cols-1 lg:grid-cols-4 md:grid-cols-2 space-y-4 lg:space-y-0 md:space-y-0 lg:gap-6 md:gap-5">
+
+                <!-- Card 1 -->
+                 <div class="space-y-2 rounded-2xl  bg-[#E7C1D3] p-5">
+                  <img src="./assets/concept.png" alt="">
+                  <h2 class="text-lg font-extrabold text-[#1C1C1C]">Concept</h2>
+                  <p class="text-[#494949] text-sm font-semibold">Turning your vision into functional and creative designs.</p>
+                 </div>
+
+                 <!-- card 2 -->
+                 <div class="space-y-2 rounded-2xl  bg-[#EFDA6E] p-5">
+                  <img src="./assets/flow-chart.png" alt="">
+                  <h2 class="text-lg font-extrabold text-[#1C1C1C]">Design Process</h2>
+                  <p class="text-[#494949] text-sm font-semibold">From vision to vibrant, functional spaces.</p>
+                 </div>
+
+                 <!-- card 3 -->
+                 <div class="space-y-2 rounded-2xl  bg-[#A4DAC3] p-5">
+                  <img src="./assets/vision.png" alt="">
+                  <h2 class="text-lg font-extrabold text-[#1C1C1C]">Supervision</h2>
+                  <p class="text-[#494949] text-sm font-semibold">Ensuring seamless execution and quality at every step.</p>
+                 </div>
+
+                 <!-- card 4 -->
+                 <div class="space-y-2 rounded-2xl  bg-[#77AAEA] p-5">
+                  <img src="./assets/budget-planning.png" alt="">
+                  <h2 class="text-lg font-extrabold text-[#1C1C1C]">Budget Planning</h2>
+                  <p class="text-[#494949] text-sm font-semibold">Aligning costs with your vision for optimal value.</p>
+                  
+                 </div>
+               </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Portfolio -->
+        <section class="bg-gray-200 lg:bg-white lg:pt-20 px-20">
+          <div class="w-11/12 mx-auto">
+            <div class="flex flex-col items-center justify-center ">
+              <button class="bg-portfolio text-sm lg:text-base px-4 py-2 rounded-3xl mb-3 font-extrabold"><i class="fa-solid fa-arrow-right mr-1 "></i>Explore our Latest works</button>
+              <h1 class="lg:text-5xl text-2xl tracking-tight text-center lg:leading-tight  font-black lg:mb-2 ">Our Latest Portfolio</h1>
+              <p class="py-4 lg:mb-3 lg:w-2/3 text-center text-sm font-semibold text-[#494949]">
+                Our Latest Portfolio highlights our most recent and innovative projects. Explore how we’ve brought unique visions to life with creativity and precision.
+              </p>
+            </div>
+        
+            <div class=" grid lg:gap-6 lg:grid-cols-[69%,30%] lg:grid-rows-[90%]  mb-5 lg:mb-0">
+               <div class=" p-5 bg-white border lg:h-full border-[#E9E9E9] rounded-2xl mb-4">
+                <div class="card  lg:flex lg:flex-row lg:gap-5">
+                    <img class="h-full" src="./assets/img1.png" alt="Movie" />
+                  <div class="card-body md:pt-0 pt-5 pb-0 lg:py-0 pl-0">
+                    <h2 class="text-xl font-extrabold text-[#494949]">Commercial</h2>
+                    <p class="text-sm lg:mt-4 lg:mb-0 font-semibold text-[#737373]">Our Latest Portfolio features cutting-edge commercial spaces we've designed. Discover how we transform business environments with style and functionality.</p>
+                    <div class="card-actions justify-start">
+                      <button class="text-[#212121] mt-2 lg:mt-0 lg:mb-2 flex items-center text-lg font-extrabold">View Details <div class="bg-lime-400 px-[7px] py-0 rounded-full ml-1">
+                        <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                      </div></button>
+                    </div>
+                  </div>
+                </div>
+               </div>
+
+                <div class="p-5 h-full  bg-contain border border-[#E9E9E9] bg-white rounded-2xl mb-4">
+                  <img class="container h-full" src="./assets/img2.png" alt="">
+                 </div>
+            </div>
+
+            <div class="grid lg:grid-cols-[24%,50%,24%] lg:grid-rows-[90%] rounded-2xl gap-y-4 lg:space-y-0 lg:gap-4">
+              <div class="p-5 h-full lg:order-1 order-3 bg-contain border border-[#E9E9E9] bg-white rounded-2xl">
+                <img class="container h-full" src="./assets/img3.png" alt="">
+               </div>
+
+
+               <div class=" p-5 bg-white border order-2 border-[#E9E9E9] rounded-2xl ">
+                <div class="card lg:h-full  lg:flex lg:flex-row lg:gap-5">
+                    <img class="h-full" src="./assets/img4.png" alt="Movie" />
+                  <div class=" md:pt-0 pt-5 pb-0 lg:py-0 pl-0">
+                    <h2 class="text-xl font-extrabold text-[#494949]">Commercial</h2>
+                    <p class="text-sm lg:mt-4 lg:mb-0 font-semibold text-[#737373]">Our Latest Portfolio showcases our latest commercial projects. See how we blend design and function to elevate business spaces.</p>
+                    <div class="card-actions justify-start">
+                      <button class="text-[#212121] mt-2 lg:mt-4 lg:mb-2 flex items-center text-lg font-extrabold">View Details <div class="bg-lime-400 px-[7px] py-0 rounded-full ml-1">
+                        <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                      </div></button>
+                    </div>
+                  </div>
+                </div>
+               </div>
+
+               <div class="p-5 h-full lg:order-3 order-1 bg-contain border border-[#E9E9E9] bg-white rounded-2xl">
+                <img class="container h-full" src="./assets/img5.png" alt="">
+               </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Challenging section -->
+         <section class="bg-gray-200 lg:rounded-lg rounded-b-lg pb-10">
+          <div class="w-11/12 mx-auto pt-8 pb-4 lg:pb-9">
+            <div class="flex flex-col items-center justify-center ">
+              <button class="bg-portfolio text-sm lg:text-base px-4 py-2 rounded-3xl mb-3 font-extrabold"><i class="fa-solid fa-arrow-right mr-1 "></i>Lifestyle Investment</button>
+              <h1 class="lg:text-5xl text-2xl tracking-tight text-center lg:leading-tight  font-black lg:mb-2 ">It’s More Than an
+                Investment in Lifestyle</h1>
+              <p class="py-4 lg:mb-3 lg:w-2/3 text-center text-sm font-semibold text-[#494949]">
+                Adding extra living space to your home naturally adds value too. While most of our customers have no reason to move, having created much-needed extra space, others have since sold and moved on. Take a look at some of the impressive returns customers have made on their investment.
+              </p>
+              <button class="bg-lime-400 text-sm lg:text-base px-4 py-2 rounded-3xl mb-3 font-extrabold">READ MORE<div class="bg-black px-2 py-[6px] rounded-full mr-2"> 
+                <i class="invert fa-solid fa-arrow-right -rotate-45"></i>
+              </div></button>
+            </div>
+          </div>
+          <div>
+            <img src="./assets/bg-my.gif" alt="">
+          </div>
+         </section>
+
+         <!-- Contact Section -->
+         <section class="bg-[url('./assets/bg.jpg')] bg-cover bg-no-repeat h-full w-full mt-1 lg:pt-12 lg:mb-2">
+          <div class="w-11/12 mx-auto pt-8 pb-4 lg:pb-9">
+            <div class="flex flex-col items-center justify-center ">
+              <button class="bg-portfolio text-sm lg:text-base px-4 py-2 rounded-3xl mb-3 font-extrabold"><i class="fa-solid fa-arrow-right mr-1 "></i>Let’s Connect</button>
+              <h1 class="lg:text-5xl text-2xl tracking-tight text-center lg:leading-tight  font-black lg:mb-2 ">Let’s Discuss Next Project</h1>
+              <p class="py-4 lg:mb-3 lg:w-2/3 text-center text-sm font-semibold text-[#494949]">
+                We’re eager to explore your vision and develop a customized design solution. Connect with us to start creating something extraordinary.
+              </p>
+            </div>
+
+            <div class="grid lg:w-3/4 mx-auto lg:gap-5 grid-cols-1 md:grid-cols-2 md:gap-x-5 lg:grid-cols-2 text-sm font-medium text-[#A0A0A0] lg:mb-5 ">
+              <input class="mb-5 bg-white  lg:mb-0  py-3 lg:py-5 px-5 rounded-full" type="text" placeholder="First Name*" name="" id="">
+              <input class="mb-5  bg-white  lg:mb-0  py-3 lg:py-5 px-5 rounded-full" type="text" placeholder="Last Name*" name="" id="">
+              <input class="mb-5 bg-white  lg:mb-0  py-3 lg:py-5 px-5 rounded-full" type="number" placeholder="Phone Number*" name="" id="">
+              <input class="mb-5 bg-white lg:mb-0  py-3 lg:py-5 px-5 rounded-full" type="text" placeholder="Email Number*" name="" id="">
+            </div>
+            <div class="grid lg:w-3/4 mx-auto text-sm font-medium text-[#A0A0A0] lg:pb-14">
+              <textarea class=" bg-white mb-5 py-3 px-5 rounded-3xl" placeholder="Write your message here" rows="7"  name="" id=""></textarea>
+              <button class="btn hover:bg-lime-400   font-extrabold rounded-full  px-5 py-2 border-none bg-lime-400 lg:flex items-center justify-center">Send Mail <div class="bg-[#1C1C1C] px-2 py-[7px] rounded-full mr-2"> 
+                <i class="invert fa-solid fa-arrow-right -rotate-45"></i>
+              </div> </button>
+            </div>
+          </div>
+         </section>
+
+     <!-- Footer  -->
+      <footer class="footer footer-center text-base bg-[#1C1C1C] text-[#E9E9E9] text-base-content rounded px-10 py-16 gap-4">
+        <div class="flex">
+          <div class="bg-lime-400 px-2 py-1 rounded-full mr-1">
+            <i class="invert fa-solid fa-arrow-right -rotate-45"></i>
+          </div>
+          <a class="text-3xl lg:text-4xl font-extrabold">Rinterio</a>
+        </div>
+        <p class="text-sm text-[#737373] font-semibold mb-4 lg:w-3/4">Redefining spaces with innovative design and meticulous attention to detail. Let’s create something extraordinary together.</p>
+        <nav class="flex flex-col lg:flex-row lg:gap-24 gap-7 mb-4">
+          <a class="link link-hover">Home</a>
+          <a class="link link-hover">Services</a>
+          <a class="link link-hover">Portfolio</a>
+          <a class="link link-hover">Blogs</a>
+          <a class="link link-hover">Contact Us</a>
+        </nav>
+          <button class="btn text-black border-0 font-extrabold hover:bg-lime-400 rounded-full py-3 px-10 lg:px-6 bg-lime-400 flex items-center justify-center">Book Consult <div class="bg-[#1C1C1C] px-2 py-[6px] rounded-full"> 
+            <i class="invert fa-solid fa-arrow-right -rotate-45"></i>
+          </div> </button>
+     </footer>
 </body>
-
 </html>
-
-<!-- fa-solid fa-star text-2xl text-amber-500 -->
