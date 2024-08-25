@@ -23,80 +23,93 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <script src="https://kit.fontawesome.com/d6e63ca862.js" crossorigin="anonymous"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'hero': 'rgb(255, 255, 255)',
+                'hero-tom': 'rgba(255, 255, 255, 0)',
+                'banner-btn': 'rgba(171, 239, 95, 0.5)',
+                'portfolio': 'rgba(171, 239, 95, 0.2)',
+              },
+            },
+          },
+        }
+      </script>
 </head>
-<body class="bg-gray-100 shadow-md px-28 py-8 manrope">
+<body class="manrope text-black">
 
-    <!-- Header Section -->
     <!-- Header -->
-<header class="p-4">
-    <div class="container mx-auto flex justify-between items-center">
-        <!-- Logo -->
-        <div class="flex items-center space-x-2">
-            <div class="w-7 h-7 bg-lime-400 rounded-full flex items-center justify-center">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 text-black">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.75 19.25L19.25 4.75M4.75 4.75h14.5v14.5" />
-                </svg>
-            </div>
-            <span class="font-extrabold text-3xl text-gray-800">Rinterio</span>
-        </div>
-
-        <!-- Navigation (Visible on large devices) -->
-        <nav class="hidden lg:flex items-center space-x-6 text-base">
-            <a href="#" class="font-extrabold">Home</a>
-            <a href="#">Services</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Blogs</a>
-            <a href="#">Contact Us</a>
-        </nav>
-
-        <!-- Right Actions -->
-        <div class="hidden lg:flex items-center space-x-4">
-            <i class="fa-solid fa-magnifying-glass w-8 h-8 bg-white rounded-full flex items-center justify-center"></i>
-            <i class="fa-solid fa-cart-shopping w-8 h-8 bg-white rounded-full flex items-center justify-center"></i>
-            <button class="btn bg-lime-400 rounded-full text-lg">Book Consult
-                <div class="w-8 h-8 bg-black rounded-full flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 text-white">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.75 19.25L19.25 4.75M4.75 4.75h14.5v14.5" />
-                    </svg>
+    <header class="bg-gradient-to-b from-[#f6f6f6] to-[#ffffff] pb-8 lg:mb-20">
+        <nav class="lg:w-11/12 md:mx-auto lg:mx-auto mb-6">
+            <div class="navbar">
+                <div class="navbar-start">
+                  <div class="bg-lime-400 px-2 py-1 rounded-full mr-2">
+                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                  </div>
+                  <a class="text-3xl lg:text-4xl font-extrabold">Rinterio</a>
                 </div>
-            </button>
-        </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu  menu-horizontal px-1 pr-4 text-sm">
+                    <li><a class="font-extrabold rounded-full text-[#494949]" href="#">Home</a></li>
 
-        <!-- Mobile Menu Icon (Visible on small devices) -->
-        <div class="lg:hidden flex items-center">
-            <button class="dropdown dropdown-end">
-                <i class="fa-solid fa-bars w-6 h-6 text-gray-800"></i>
-                <ul class="dropdown-content menu p-2 shadow bg-base-100 rounded-box w-52">
+                    <li><a class="text-[#737373] rounded-full" href="#">Services</a></li>
+
+                    <li><a class="text-[#737373] rounded-full" href="#">Portfolio</a></li>
+
+                    <li><a class="text-[#737373] rounded-full" href="#">Blogs</a></li>
+
+                    <li><a class="text-[#737373] rounded-full" href="#">Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden bg-[#E9E9E9] rounded-full">
+                        <i class="fa-solid fa-bars text-xl"></i>
+                    </div>
+                    <ul class="relative right-0 menu menu-sm dropdown-content bg-stone-50 rounded-xl mt-3 shadow z-10">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Services</a></li>
                     <li><a href="#">Portfolio</a></li>
                     <li><a href="#">Blogs</a></li>
                     <li><a href="#">Contact Us</a></li>
-                </ul>
-            </button>
-        </div>
-    </div>
-</header>
-
-<!-- Hero Section -->
-<section class="hero min-h-screen text-center">
-    <div class="hero-content flex flex-col items-center">
-        <img src="./assets/banner.png" class="max-w-sm mb-6" />
-        <div>
-            <h1 class="text-4xl lg:text-6xl font-bold">A barn house of this design has a <br> striking appearance</h1>
-            <p class="py-6 text-base">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br> accents, and large windows that flood the space with natural light.</p>
-            <button class="btn bg-lime-200 rounded-full text-xl font-bold">
-                View Details
-                <div class="w-8 h-8 bg-lime-400 rounded-full flex items-center justify-center">
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-4 h-4 text-black">
-                        <path stroke-linecap="round" stroke-linejoin="round" d="M4.75 19.25L19.25 4.75M4.75 4.75h14.5v14.5" />
-                    </svg>
+                    </ul>
+                  </div>
+                  <div class="mr-3 hidden border lg:grid  text-center px-2 py-2 rounded-full bg-[#FFFFFF]">
+                    <i class="hidden lg:grid fa-solid fa-magnifying-glass"></i>
+                    </div>
+                    <div class="mr-3 hidden border lg:grid  text-center px-2 py-2 rounded-full bg-[#FFFFFF]">
+                    <i class="hidden lg:grid fa-solid fa-cart-shopping"></i>
+                     </div>
+                    <button class="btn hover:bg-lime-400 rounded-full  px-5 py-2 hidden bg-lime-400 lg:flex items-center justify-center">Book Consult <div class="bg-black px-2 py-[6px] rounded-full mr-2"> 
+                        <i class="invert fa-solid fa-arrow-right -rotate-45"></i>
+                      </div> </button>
+                 
                 </div>
-            </button>
-        </div>
-    </div>
-</section>
+              </div>
+        </nav>
 
+        <div class="hero lg:w-11/12 lg:mx-auto">
+            <div class="hero-content flex-col">
+              <img
+                src="./assets/banner.png"
+                class="" />
+              <div>
+                <h1 class="text-[26px] lg:text-6xl font-extrabold text-center">A barn house of this design has a striking appearance</h1>
+                <p class="pt-6 lg:pt-7 text-sm text-center lg:w-3/4 mx-auto mb-5 lg:mb-8">
+                    The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal accents, and large windows that flood the space with natural light.
+                </p>
+                  <button class="text-base border  border-[#ABEF5F] w-full md:w-auto lg:w-auto flex px-5 justify-center items-center btn bg-lime-200 px-  mx-auto rounded-full py-2 font-extrabold">View Details <div class="bg-lime-400 px-2 py-1 rounded-full ml-1">
+                    <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+    </header>
 </body>
 
 </html>
